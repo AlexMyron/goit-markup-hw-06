@@ -31,13 +31,72 @@
       </nav>
       <address class="header__address">
         <ul class="header__address-list list">
-          <li class="header__address-item"><a class="header__address-link link"
-              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="header__address-item"><a class="header__address-link link" href="tel:+110001111111">+11 (000)
-              111-11-11</a>
+          <li class="header__address-item">
+            <a class="header__address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="header__address-item">
+            <a class="header__address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
+
+      <button class="menu-button-open js-open-menu" aria-expanded="false">
+        <svg class="menu-button__icon icon icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <!-- Burger-menu -->
+      <div class="burger-menu js-menu-container">
+        <button class="menu-button-close js-close-menu">
+          <svg class="menu-button__close-icon icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="burger-menu__nav list">
+            <li class="burger-menu__item"><a class="burger-menu__link link" href="./index.html" title="Studio">Studio</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link link current" href="./portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link link" href="./contacts.html" title="Contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="burger-contacts__wrapper">
+          <ul class="burger-contacts__list list">
+            <li class="burger-contacts__item">
+              <a class="burger-contacts__link link" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="burger-contacts__item">
+              <a class="burger-contacts__link link burger-contacts__link--email" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="burger-social list">
+            <li class="burger-social__item"><a href="" class="burger-social__link link" rel="noopener noreferrer">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+            <li class="burger-social__item"><a href="" class="burger-social__link link" rel="noopener noreferrer">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+            <li class="burger-social__item"><a href="" class="burger-social__link link" rel="noopener noreferrer">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a></li>
+            <li class="burger-social__item"><a href="" class="burger-social__link link" rel="noopener noreferrer">
+              <svg class="social-links__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div> 
     </div>
   </header>
   <main>
@@ -242,14 +301,22 @@
           </label>
           <button type="submit" class="subscribe__button">
             Subscribe
-            <svg class="subscribe__button-icon" width="24" height="24">
+            <svg class="subscribe__button-icon icon" width="24" height="24">
               <use href="./images/icons.svg#icon-paper-plane"></use>
             </svg>
           </button>
-          </form>
+        </form>
       </div>
     </div>
   </footer>
+  
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
